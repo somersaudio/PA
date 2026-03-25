@@ -29,7 +29,15 @@
       "target": [
         {
           "target": "dmg",
-          "arch": ["arm64"]
+          "arch": [
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "arm64"
+          ]
         }
       ],
       "icon": "public/icon.icns",
@@ -73,7 +81,12 @@
         "to": "data/soundflow-commands.json"
       }
     ],
-    "afterPack": "./electron/after-pack.js"
+    "afterPack": "./electron/after-pack.js",
+    "publish": {
+      "provider": "github",
+      "owner": "somersaudio",
+      "repo": "PA"
+    }
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",
@@ -82,6 +95,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.45.1",
+    "electron-updater": "^6.8.3",
     "imapflow": "^1.2.16",
     "lucide-react": "^1.0.1",
     "mailparser": "^3.9.5",

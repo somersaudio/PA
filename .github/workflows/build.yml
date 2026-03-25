@@ -23,20 +23,16 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
-      - name: Build Electron DMG (arm64)
-        run: npx electron-builder --mac --arm64
+      - name: Build Electron (arm64 DMG + ZIP)
+        run: npx electron-builder --mac --arm64 --publish always
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload DMG artifact
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: PA-arm64-dmg
-          path: dist/*.dmg
-
-      - name: Release
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
-        with:
-          files: dist/*.dmg
-          generate_release_notes: true
+          name: PA-arm64
+          path: |
+            dist/*.dmg
+            dist/*.zip
+            dist/latest-mac.yml
