@@ -1,0 +1,44 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# build output
+/.next/
+/out/
+/build
+/dist/
+
+# env (secrets)
+.env.local
+.env*.local
+
+# keep .env.example tracked
+!.env.example
+
+# database (user data)
+data/pa.db
+data/pa.db-shm
+data/pa.db-wal
+data/emails/
+!data/emails/.gitkeep
+data/uploads/
+!data/uploads/.gitkeep
+data/screenshots/
+data/dropbox-config.json
+data/session-collaborators.json
+data/soundflow-config.json
+data/suno-queue.json
+
+# downloads (user content)
+downloads/
+!downloads/.gitkeep
+
+# misc
+.DS_Store
+*.pem
+*.dmg
+npm-debug.log*
+.vercel
+*.tsbuildinfo
+next-env.d.ts

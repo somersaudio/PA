@@ -1,0 +1,1804 @@
+{
+  "commands": [
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckxz4ioil0009m1102yahtdkl",
+      "name": "Play",
+      "description": "Start playback in Pro Tools"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600dyzv10rk606haa",
+      "name": "Back and Play",
+      "description": "The 'Back and Play' command in Pro Tools moves the playhead backward by a specified amount of time (typically a few seconds) and immediately begins playback, allowing audio engineers to quickly review and hear audio material that just played without manually repositioning the cursor."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600dczv10o7nrb7bu",
+      "name": "Back and Play (Keep Selection)",
+      "description": "The 'Back and Play (Keep Selection)' command moves the playhead back to the beginning of the current audio selection and starts playback while maintaining the selected region boundaries, allowing you to repeatedly audition the same section without having to reselect it each time."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckxz4q4aa000am1108s2ssakm",
+      "name": "Fast Forward",
+      "description": "The 'Fast Forward' command in Pro Tools/SoundFlow rapidly advances the playhead position forward through the timeline at an accelerated speed, allowing audio producers to quickly navigate to later sections of their session without playing back audio in real-time."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckxz4s6gv000cm110yuo6t4ib",
+      "name": "Go To End",
+      "description": "The 'Go To End' command instantly moves the playhead cursor to the very end of the session timeline, allowing quick navigation to the final point of all audio content for tasks like adding new material or checking the session's total length."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckxz4v4fc000fm1108h02q3gd",
+      "name": "Play / Stop",
+      "description": "The 'Play / Stop' command in Pro Tools/SoundFlow toggles playback of the audio session, starting playback from the current playhead position when stopped or immediately stopping playback when the session is currently playing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckxz4ti3m000dm110aey6hrsq",
+      "name": "Record",
+      "description": "The 'Record' command in Pro Tools/SoundFlow arms the selected audio track(s) for recording and begins capturing audio input through the designated interface inputs onto those tracks in the current Pro Tools session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckxz4qyf8000bm110fq1ip9ce",
+      "name": "Return to Zero",
+      "description": "The 'Return to Zero' command instantly moves the playhead/cursor position back to the very beginning of the timeline (00:00:00:00) in your Pro Tools session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600dxzv10k6odf72r",
+      "name": "Rewind",
+      "description": "The 'Rewind' command in Pro Tools/SoundFlow moves the playback cursor backward to the beginning of the session or to the previous marker/memory location, allowing producers to quickly return to earlier points in their audio timeline for editing or playback."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckxz4u7x3000em110l2uta5fx",
+      "name": "Stop",
+      "description": "The 'Stop' command in Pro Tools/SoundFlow immediately halts audio playback or recording and returns the playhead to its current position without moving it back to the beginning of the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1wljlaa00071n10xgqqkac7",
+      "name": "Stop at Playback Position",
+      "description": "The 'Stop at Playback Position' command in Pro Tools stops audio playback and keeps the playhead at the current playback location instead of returning it to the original starting position, allowing engineers to quickly resume from where they stopped or make edits at that exact timeline position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckydgt59600003110hy9vb7kb",
+      "name": "Close First Audiosuite Plugin",
+      "description": "The 'Close First Audiosuite Plugin' command closes the first open AudioSuite plugin window in Pro Tools, allowing audio engineers to quickly clear their workspace without manually clicking the close button on destructive audio processing plugin interfaces."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyb9rgl000aua10o6xfz6v5",
+      "name": "Open Audiosuite Plugin",
+      "description": "The 'Open Audiosuite Plugin' command launches Pro Tools' non-real-time audio processing interface, allowing you to apply destructive effects and processing directly to selected audio regions or files on disk."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoo6b1uu000myj10s1rc02md",
+      "name": "Open, Render and Close Audiosuite Plugin",
+      "description": "This command opens a selected AudioSuite plugin, automatically renders/processes the audio with the plugin's current settings, and then closes the plugin window, streamlining the workflow for applying destructive audio processing without manual intervention."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq30003zv1010c88n69",
+      "name": "Preview Current Audiosuite Plugin",
+      "description": "The 'Preview Current Audiosuite Plugin' command allows you to audition the selected AudioSuite plugin's processing effect on your audio selection in real-time without actually rendering or committing the changes to the audio file."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq30004zv10mymq05xa",
+      "name": "Render Current Audiosuite Plugin",
+      "description": "The 'Render Current Audiosuite Plugin' command permanently applies the currently selected AudioSuite plugin processing to the audio region(s), creating new audio files with the effect baked in and replacing the original regions in the timeline."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq30009zv103nmjtyhk",
+      "name": "Search Audiosuite Plugins",
+      "description": "The 'Search Audiosuite Plugins' command allows audio engineers to quickly locate and access specific AudioSuite plugins (Pro Tools' offline audio processing tools) by typing part of their name, streamlining the workflow when applying effects like noise reduction, pitch correction, or time compression to selected audio regions."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#ckh7x13it0009iw10nkhw0yc8",
+      "name": "Set Fader to -1 db",
+      "description": "Absolute fader command: sets the selected track's volume fader to exactly -1 dB, regardless of its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#ckh7x0wxc0008iw10uvdlhznb",
+      "name": "Set Fader to -2 dB",
+      "description": "Absolute fader command: sets the selected track's volume fader to exactly -2 dB, regardless of its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#ckh7x0oif0007iw10ysmlgdtg",
+      "name": "Set Fader to -3 dB",
+      "description": "Absolute fader command: sets the selected track's volume fader to exactly -3 dB, regardless of its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#ckh7wxnmc0001iw1039oq5jxx",
+      "name": "Set Fader to (Ask for Amount)",
+      "description": "Absolute fader command: prompts for a dB value and sets the selected track's fader to that exact level, regardless of its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#ckh7wzqe70003iw108m2gef5k",
+      "name": "Set Fader to +1 dB",
+      "description": "Absolute fader command: sets the selected track's volume fader to exactly +1 dB, regardless of its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#ckh7x02d30004iw10snzr1z8a",
+      "name": "Set Fader to +2 dB",
+      "description": "Absolute fader command: sets the selected track's volume fader to exactly +2 dB, regardless of its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#ckh7x08c60005iw10bjqwei8r",
+      "name": "Set Fader to +3 dB",
+      "description": "Absolute fader command: sets the selected track's volume fader to exactly +3 dB, regardless of its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#cklpi0m6u0004u910gjn8ep3b",
+      "name": "Trim Fader -1 db",
+      "description": "Relative fader command: lowers the selected track's fader by 1 dB from its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#cklpi0m6u0005u9108wbm19d9",
+      "name": "Trim Fader -2 dB",
+      "description": "Relative fader command: lowers the selected track's fader by 2 dB from its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#cklpi0m6u0006u9102ee0574m",
+      "name": "Trim Fader -3 dB",
+      "description": "Relative fader command: lowers the selected track's fader by 3 dB from its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#cklpi0m6u0007u910wq4q4anu",
+      "name": "Trim Fader (Ask for Amount)",
+      "description": "Relative fader command: prompts for a dB value and adjusts the selected track's fader by that amount relative to its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#cklpi0m6u0008u910f30mzw9g",
+      "name": "Trim Fader +1 dB",
+      "description": "Relative fader command: raises the selected track's fader by 1 dB from its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#cklpi0m6u0009u910erm0u21f",
+      "name": "Trim Fader +2 dB",
+      "description": "Relative fader command: raises the selected track's fader by 2 dB from its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cklphujq60000u91070dmknxf#cklpi0m6u000au910yfp9cg75",
+      "name": "Trim Fader +3 dB",
+      "description": "Relative fader command: raises the selected track's fader by 3 dB from its current position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq4001izv10fwl78pmg",
+      "name": "Create Boundary Automation Breakpoints",
+      "description": "The 'Create Boundary Automation Breakpoints' command automatically inserts automation breakpoints at the beginning and end of selected audio regions or time ranges, allowing producers to isolate automation changes within specific sections without affecting adjacent parts of the mix."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009azv101vl71ilx",
+      "name": "Cut All Automation on Selection Edges",
+      "description": "The 'Cut All Automation on Selection Edges' command creates breakpoints (automation nodes) at the start and end boundaries of your current selection across all automated parameters, allowing you to isolate and edit automation data within that specific time range without affecting automation outside the selection."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w3bpp9000pef10l0mxi853",
+      "name": "Preview All Parameters on Selected Track(s)",
+      "description": "The 'Preview All Parameters on Selected Track(s)' command displays a comprehensive overview of all automation parameters, plugin settings, and audio processing applied to the currently selected track(s) without needing to open individual plugin windows or automation lanes. Technically, it simulates an Option+Shift click on the Preview button, putting all writeable automation parameters on the selected track(s) into preview mode. Requires Preview Mode to be enabled first. Useful for copying all automation values from one point in time to another."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w2kahf0009ef10vk5h99l9",
+      "name": "Reset Preview",
+      "description": "Reset Preview. Disables Preview mode and enables it again, effectively resetting any previewed automation parameters back to their original values."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckh7wx9cy0000iw10ih45g7en",
+      "name": "Trim Volume Automation in Selection",
+      "description": "Trim Volume Automation in Selection"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckh7wx9cy0000iw10ih45g7en#ckh7x13it0009iw10nkhw0yc8",
+      "name": "Trim Selection -1 dB",
+      "description": "The 'Trim Selection -1 dB' command reduces the amplitude of the selected audio region(s) by 1 decibel, effectively lowering the volume level of that specific audio material without affecting other tracks or regions in the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckh7wx9cy0000iw10ih45g7en#ckh7x0wxc0008iw10uvdlhznb",
+      "name": "Trim Selection -2 dB",
+      "description": "Trim Selection -2 dB"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckh7wx9cy0000iw10ih45g7en#ckh7x0oif0007iw10ysmlgdtg",
+      "name": "Trim Selection -3 dB",
+      "description": "Trim Selection -3 dB"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckh7wx9cy0000iw10ih45g7en#ckh7wxnmc0001iw1039oq5jxx",
+      "name": "Trim Selection (Ask for Amount)",
+      "description": "The 'Trim Selection (Ask for Amount)' command in Pro Tools/SoundFlow prompts the user to enter a specific time value and then trims the current audio/MIDI selection by that exact amount from either the beginning or end of the selection."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckh7wx9cy0000iw10ih45g7en#ckh7wzqe70003iw108m2gef5k",
+      "name": "Trim Selection +1 dB",
+      "description": "The 'Trim Selection +1 dB' command increases the gain/amplitude of the currently selected audio region(s) by 1 decibel, effectively making that portion of the audio louder without affecting the rest of the track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckh7wx9cy0000iw10ih45g7en#ckh7x02d30004iw10snzr1z8a",
+      "name": "Trim Selection +2 dB",
+      "description": "The 'Trim Selection +2 dB' command increases the gain of the selected audio region(s) by 2 decibels, making them louder while leaving unselected audio unchanged."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckh7wx9cy0000iw10ih45g7en#ckh7x08c60005iw10bjqwei8r",
+      "name": "Trim Selection +3 dB",
+      "description": "The 'Trim Selection +3 dB' command increases the gain of the selected audio region(s) by 3 decibels, permanently modifying the audio waveform data to make it louder without affecting other parts of the track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8phz30006xq10rq5tg860",
+      "name": "All Tracks: Latch",
+      "description": "This changes all tracks to Latch Automation Mode"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8e92h0001xq10imei49ui",
+      "name": "All Tracks: Off",
+      "description": "All Tracks Automation is turned to Off"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8oxpn0004xq10fagn6dly",
+      "name": "All Tracks: Read",
+      "description": "All Tracks Automation is turned to Read"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8p8zz0005xq105u2637b6",
+      "name": "All Tracks: Touch",
+      "description": "All Tracks Automation is turned to Touch mode"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8ps0w0007xq10gfcm6ixi",
+      "name": "All Tracks: Touch/Latch",
+      "description": "All Tracks Automation is turned to Touch/Latch mode"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8qtfq0009xq10iyyxav7p",
+      "name": "All Tracks: Trim",
+      "description": "The 'All Tracks: Trim' command in Pro Tools/SoundFlow automatically removes unused audio from the beginning and end of all audio regions across every track in the session, helping to clean up the timeline and reduce file sizes by eliminating silent or unwanted portions."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8qep30008xq10d3e2dkhe",
+      "name": "All Tracks: Write",
+      "description": "The 'All Tracks: Write' command in Pro Tools/SoundFlow enables automation write mode across all tracks simultaneously, allowing real-time recording of parameter changes (like fader movements, pan adjustments, and plugin controls) during playback."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8s34i000cxq10q3dnbjx3",
+      "name": "Selected Tracks: Latch",
+      "description": "The 'Selected Tracks: Latch' command sets the automation mode of selected tracks to Latch, which means automation parameters will be recorded while moving controls and then hold their last written value when you stop making adjustments during playback."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8n7wn0002xq10eamxbe7t",
+      "name": "Selected Tracks: Off",
+      "description": "This turns automation mods off for the selected tracks"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8rmcr000axq101c8gu30p",
+      "name": "Selected Tracks: Read",
+      "description": "Turns the selected tracks autmation mode to read"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8ru3d000bxq10eoq4j8j0",
+      "name": "Selected Tracks: Touch",
+      "description": "the selected tracks automation is set to touch"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8sfzm000dxq103kyid3os",
+      "name": "Selected Tracks: Touch/Latch",
+      "description": "The selected tracks automation will be set to touch/latch"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8t57i000fxq10cpyxnwlq",
+      "name": "Selected Tracks: Trim",
+      "description": "sets the selected track to trim mode automation"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckux8btgj0000xq104p36odzz#ckux8st11000exq10m8j9utdh",
+      "name": "Selected Tracks: Write",
+      "description": "sets the selected tracks to write mode automation"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq4001vzv10nw7jwqbm",
+      "name": "Create boundary clip gain breakpoints",
+      "description": "Create boundary clip gain breakpoints"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009bzv107zf1ajli",
+      "name": "Cut all clip gain on selection edges",
+      "description": "Cut all clip gain on selection edges"
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9ts000009109d2a84tn",
+      "name": "Insert Plugin 1",
+      "description": "Opens the plugin search/insert dialog for insert slot 1 on the selected track, allowing you to add a plugin to the first insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9tt00090910h9s66vz1",
+      "name": "Insert Plugin 10",
+      "description": "Opens the plugin search/insert dialog for insert slot 10 on the selected track, allowing you to add a plugin to the tenth insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9ts00010910x2ebgbqc",
+      "name": "Insert Plugin 2",
+      "description": "Opens the plugin search/insert dialog for insert slot 2 on the selected track, allowing you to add a plugin to the second insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9ts000209105bzu0jcy",
+      "name": "Insert Plugin 3",
+      "description": "Opens the plugin search/insert dialog for insert slot 3 on the selected track, allowing you to add a plugin to the third insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9ts00030910ximrfxh4",
+      "name": "Insert Plugin 4",
+      "description": "Opens the plugin search/insert dialog for insert slot 4 on the selected track, allowing you to add a plugin to the fourth insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9tt0004091082v142lq",
+      "name": "Insert Plugin 5",
+      "description": "Opens the plugin search/insert dialog for insert slot 5 on the selected track, allowing you to add a plugin to the fifth insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9tt00050910v879ig6w",
+      "name": "Insert Plugin 6",
+      "description": "Opens the plugin search/insert dialog for insert slot 6 on the selected track, allowing you to add a plugin to the sixth insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9tt00060910zwps4zup",
+      "name": "Insert Plugin 7",
+      "description": "Opens the plugin search/insert dialog for insert slot 7 on the selected track, allowing you to add a plugin to the seventh insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9tt000709101raz1k6e",
+      "name": "Insert Plugin 8",
+      "description": "Opens the plugin search/insert dialog for insert slot 8 on the selected track, allowing you to add a plugin to the eighth insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjdbwp000neo10g122z675#ckoyjd9tt00080910g4s533xp",
+      "name": "Insert Plugin 9",
+      "description": "Opens the plugin search/insert dialog for insert slot 9 on the selected track, allowing you to add a plugin to the ninth insert position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700007g10xyv8f8ve",
+      "name": "Toggle Insert 1",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 1 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700097g10hltzl41v",
+      "name": "Toggle Insert 10",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 10 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700017g10kbdoomom",
+      "name": "Toggle Insert 2",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 2 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700027g105irittae",
+      "name": "Toggle Insert 3",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 3 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700037g10ommjcy2r",
+      "name": "Toggle Insert 4",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 4 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700047g10yji7itgo",
+      "name": "Toggle Insert 5",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 5 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700057g106i9kjs9e",
+      "name": "Toggle Insert 6",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 6 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700067g10wh4ks66o",
+      "name": "Toggle Insert 7",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 7 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700077g10vid9kz4m",
+      "name": "Toggle Insert 8",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 8 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybm0c6000gua10gqbohi28#ckoyblxs700087g101sq7naxy",
+      "name": "Toggle Insert 9",
+      "description": "Opens or closes the plugin window for the plugin loaded in insert slot 9 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w2y8yd000def101ars8212",
+      "name": "Search Presets",
+      "description": "Searches presets in the frontmost AudioSuite or Plugin window. Open or focus the plugin window first, then run this command to get a searchable popup with all presets stored for that plugin."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4r00009y10azxso7y0",
+      "name": "Toggle Insert Active on Selected Track 1",
+      "description": "Toggles the active state of the plugin in insert slot 1 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4s00099y103xo4qbnl",
+      "name": "Toggle Insert Active on Selected Track 10",
+      "description": "Toggles the active state of the plugin in insert slot 10 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4r00019y10dtsdrith",
+      "name": "Toggle Insert Active on Selected Track 2",
+      "description": "Toggles the active state of the plugin in insert slot 2 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4r00029y108n54acu0",
+      "name": "Toggle Insert Active on Selected Track 3",
+      "description": "Toggles the active state of the plugin in insert slot 3 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4r00039y10judj98n0",
+      "name": "Toggle Insert Active on Selected Track 4",
+      "description": "Toggles the active state of the plugin in insert slot 4 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4r00049y10j5waudix",
+      "name": "Toggle Insert Active on Selected Track 5",
+      "description": "Toggles the active state of the plugin in insert slot 5 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4r00059y10ftt86250",
+      "name": "Toggle Insert Active on Selected Track 6",
+      "description": "Toggles the active state of the plugin in insert slot 6 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4r00069y10f2jcskb2",
+      "name": "Toggle Insert Active on Selected Track 7",
+      "description": "Toggles the active state of the plugin in insert slot 7 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4r00079y10ysrcsula",
+      "name": "Toggle Insert Active on Selected Track 8",
+      "description": "Toggles the active state of the plugin in insert slot 8 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyc047u000nua10eehf9up4#ckoybzy4s00089y107jcp0lda",
+      "name": "Toggle Insert Active on Selected Track 9",
+      "description": "Toggles the active state of the plugin in insert slot 9 on the selected track. Inactive plugins are bypassed but remain loaded in the insert slot."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw700009810mc15q0dv",
+      "name": "Toggle Insert Bypass on Selected Track 1",
+      "description": "Toggles bypass on the plugin in insert slot 1 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw700099810z7puqke8",
+      "name": "Toggle Insert Bypass on Selected Track 10",
+      "description": "Toggles bypass on the plugin in insert slot 10 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw700019810um9blhnm",
+      "name": "Toggle Insert Bypass on Selected Track 2",
+      "description": "Toggles bypass on the plugin in insert slot 2 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw700029810991ure7t",
+      "name": "Toggle Insert Bypass on Selected Track 3",
+      "description": "Toggles bypass on the plugin in insert slot 3 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw7000398103p0f4zn1",
+      "name": "Toggle Insert Bypass on Selected Track 4",
+      "description": "Toggles bypass on the plugin in insert slot 4 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw7000498107yiih01e",
+      "name": "Toggle Insert Bypass on Selected Track 5",
+      "description": "Toggles bypass on the plugin in insert slot 5 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw700059810vv2irkqc",
+      "name": "Toggle Insert Bypass on Selected Track 6",
+      "description": "Toggles bypass on the plugin in insert slot 6 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw700069810omqyljrq",
+      "name": "Toggle Insert Bypass on Selected Track 7",
+      "description": "Toggles bypass on the plugin in insert slot 7 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw700079810pe06mnyw",
+      "name": "Toggle Insert Bypass on Selected Track 8",
+      "description": "Toggles bypass on the plugin in insert slot 8 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoybve6p000lua10vfhjsi0e#ckoybvbw700089810v8h1sjx2",
+      "name": "Toggle Insert Bypass on Selected Track 9",
+      "description": "Toggles bypass on the plugin in insert slot 9 on the selected track. Bypassed plugins pass audio through unprocessed."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p0004h410dmj0ad1h",
+      "name": "Open Send 1",
+      "description": "Opens the send assignment/routing window for send slot 1 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p000dh4108ngwr6g2",
+      "name": "Open Send 10",
+      "description": "Opens the send assignment/routing window for send slot 10 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p0005h4103v5rskil",
+      "name": "Open Send 2",
+      "description": "Opens the send assignment/routing window for send slot 2 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p0006h410jwa1ju02",
+      "name": "Open Send 3",
+      "description": "Opens the send assignment/routing window for send slot 3 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p0007h41010adjrdl",
+      "name": "Open Send 4",
+      "description": "Opens the send assignment/routing window for send slot 4 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p0008h410jpq52xq2",
+      "name": "Open Send 5",
+      "description": "Opens the send assignment/routing window for send slot 5 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p0009h410syo1q1kj",
+      "name": "Open Send 6",
+      "description": "Opens the send assignment/routing window for send slot 6 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p000ah410hekc9058",
+      "name": "Open Send 7",
+      "description": "Opens the send assignment/routing window for send slot 7 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p000bh410txh0q4oo",
+      "name": "Open Send 8",
+      "description": "Opens the send assignment/routing window for send slot 8 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckovi16zc000eh410lnyicswx#ckovi0r4p000ch4102ce7ktwo",
+      "name": "Open Send 9",
+      "description": "Opens the send assignment/routing window for send slot 9 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshj00000z10h7at10ti",
+      "name": "Select Send Output 1",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 1 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshk00090z10d5ghxvb8",
+      "name": "Select Send Output 10",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 10 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshk00010z10aepp9qzb",
+      "name": "Select Send Output 2",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 2 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshk00020z10mojjotm2",
+      "name": "Select Send Output 3",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 3 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshk00030z10myt1abap",
+      "name": "Select Send Output 4",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 4 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshk00040z10qrg9jne8",
+      "name": "Select Send Output 5",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 5 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshk00050z10x3wxjr0h",
+      "name": "Select Send Output 6",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 6 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshk00060z10r0vvgd7r",
+      "name": "Select Send Output 7",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 7 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshk00070z106zpmvjh0",
+      "name": "Select Send Output 8",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 8 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyjhv9m000reo10nweu06zw#ckoyjhshk00080z10li4xr5wd",
+      "name": "Select Send Output 9",
+      "description": "Opens a searchable dialog to select the bus/output routing for send slot 9 on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0000wk102eoa36fa",
+      "name": "Toggle Send Active 1",
+      "description": "Toggles the active state of send slot 1 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0009wk10r9d4kb6i",
+      "name": "Toggle Send Active 10",
+      "description": "Toggles the active state of send slot 10 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0001wk10jmjoxx4w",
+      "name": "Toggle Send Active 2",
+      "description": "Toggles the active state of send slot 2 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0002wk10e1m03wl2",
+      "name": "Toggle Send Active 3",
+      "description": "Toggles the active state of send slot 3 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0003wk103ob915iz",
+      "name": "Toggle Send Active 4",
+      "description": "Toggles the active state of send slot 4 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0004wk108b06yi7z",
+      "name": "Toggle Send Active 5",
+      "description": "Toggles the active state of send slot 5 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0005wk10r2ekjeg0",
+      "name": "Toggle Send Active 6",
+      "description": "Toggles the active state of send slot 6 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0006wk10yefruys5",
+      "name": "Toggle Send Active 7",
+      "description": "Toggles the active state of send slot 7 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0007wk10si5dhxl7",
+      "name": "Toggle Send Active 8",
+      "description": "Toggles the active state of send slot 8 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiord60009eo103opsqdps#ckoyiopfl0008wk106ymw621x",
+      "name": "Toggle Send Active 9",
+      "description": "Toggles the active state of send slot 9 on the selected track. Inactive sends stop routing audio to their destination."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0000ww10p7sogn1e",
+      "name": "Toggle Send Bypass 1",
+      "description": "Toggles bypass on send slot 1 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0009ww103lykh4lc",
+      "name": "Toggle Send Bypass 10",
+      "description": "Toggles bypass on send slot 10 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0001ww10bt5ngtjw",
+      "name": "Toggle Send Bypass 2",
+      "description": "Toggles bypass on send slot 2 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0002ww10n2u87f9m",
+      "name": "Toggle Send Bypass 3",
+      "description": "Toggles bypass on send slot 3 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0003ww1066hb05qu",
+      "name": "Toggle Send Bypass 4",
+      "description": "Toggles bypass on send slot 4 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0004ww10l9mmz2dn",
+      "name": "Toggle Send Bypass 5",
+      "description": "Toggles bypass on send slot 5 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0005ww10zkna3917",
+      "name": "Toggle Send Bypass 6",
+      "description": "Toggles bypass on send slot 6 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0006ww10my9ac15s",
+      "name": "Toggle Send Bypass 7",
+      "description": "Toggles bypass on send slot 7 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0007ww1057qzjair",
+      "name": "Toggle Send Bypass 8",
+      "description": "Toggles bypass on send slot 8 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyirewg000ceo10wivpt641#ckoyircnv0008ww10m57w3wu2",
+      "name": "Toggle Send Bypass 9",
+      "description": "Toggles bypass on send slot 9 on the selected track. Bypassed sends pass audio through without processing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0000xg10vzrf7if7",
+      "name": "Go to Return Track of Send 1",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 1 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0009xg10ong6mn5m",
+      "name": "Go to Return Track of Send 10",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 10 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0001xg10svbqvyzl",
+      "name": "Go to Return Track of Send 2",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 2 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0002xg10nd60dzss",
+      "name": "Go to Return Track of Send 3",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 3 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0003xg101uwd7rws",
+      "name": "Go to Return Track of Send 4",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 4 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0004xg105duz5fc6",
+      "name": "Go to Return Track of Send 5",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 5 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0005xg10t6g55up8",
+      "name": "Go to Return Track of Send 6",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 6 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0006xg10h9l4mclo",
+      "name": "Go to Return Track of Send 7",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 7 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0007xg10kmz5f1qa",
+      "name": "Go to Return Track of Send 8",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 8 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoyiv6gp000feo10d3j5e6pa#ckoyiv48j0008xg10msf3q2c7",
+      "name": "Go to Return Track of Send 9",
+      "description": "Navigates to and selects the return track (aux/bus) that send slot 9 is routed to on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600cszv10lllqaw9o",
+      "name": "Open Track Display Menu",
+      "description": "Opens the track display/view menu on the selected track, allowing you to change the track height, show/hide lanes, and configure track display options."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600cmzv10jczkw1u3",
+      "name": "Open Track Input Menu",
+      "description": "Opens the input routing menu on the selected track, allowing you to assign an audio input source (hardware input, bus, etc.)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600cozv10qlrb7tng",
+      "name": "Open Track Output Window",
+      "description": "Opens the output routing menu on the selected track, allowing you to assign the audio output destination (hardware output, bus, etc.)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600adzv10udko3yaf",
+      "name": "Reset Pan in Active Track Output Window",
+      "description": "Resets the pan knob(s) to center (0) in the currently active track output window."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w2c4pp0004ef10azkl2hva",
+      "name": "Select No Input for All Selected Tracks",
+      "description": "Sets the input routing to 'No Input' on all currently selected tracks, disconnecting them from any hardware input or bus source."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600cnzv10kxl7ea9g",
+      "name": "Select Track Input (Search)",
+      "description": "Opens a searchable dialog to select the input routing for the selected track, allowing quick assignment of hardware inputs or busses by typing to filter."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600cpzv107ca6ycfp",
+      "name": "Select Track Output (Search)",
+      "description": "Opens a searchable dialog to select the output routing for the selected track, allowing quick assignment of hardware outputs or busses by typing to filter."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600a9zv10tlid5zim",
+      "name": "Toggle Front/Rear Inverse Pan in Active Track Output Window",
+      "description": "Toggles the front/rear inverse pan link in the active track output window, which mirrors front pan movements to the rear channels in opposite direction for surround mixing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600aazv10n3rj4pc4",
+      "name": "Toggle Inverse Pan in Active Track Output Window",
+      "description": "Toggles the inverse pan link in the active track output window, which mirrors left/right pan movements so when one channel pans left, the other pans right."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600abzv100gymn9t3",
+      "name": "Toggle Pan Linking in Active Track Output Window",
+      "description": "Toggles pan linking in the active track output window, which locks the left and right pan knobs together so they move as a pair."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600aczv10604sigtx",
+      "name": "Toggle Rear Inverse Pan in Active Track Output Window",
+      "description": "Toggles the rear inverse pan link in the active track output window, which mirrors rear surround channel pan movements in opposite directions."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1wlgixs00031n10do3z3zel",
+      "name": "Bank Controller to Selected Track",
+      "description": "Banks the hardware control surface (e.g. fader controller) so that its first fader aligns with the currently selected track in Pro Tools."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009xzv10kcju1iga",
+      "name": "Bulk Rename Selected Tracks",
+      "description": "Opens a dialog to rename multiple selected tracks at once, allowing batch renaming with patterns, numbering, or find-and-replace across all selected tracks."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck21qlca40000p110mb17hf60",
+      "name": "Capitalize Selected Track Names",
+      "description": "Capitalizes the names of all currently selected tracks (e.g. 'main vox' becomes 'Main Vox')."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1wlej9500021n10xd4epobk",
+      "name": "Count Number of Selected Tracks",
+      "description": "Displays the total number of currently selected tracks in the Pro Tools session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw",
+      "name": "Create New Track(s)",
+      "description": "Opens the Pro Tools 'New Tracks' dialog box where you can specify track type (audio, aux, VCA, etc.), format (mono/stereo), quantity, and name for new tracks."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumchgvk0005ph10tv6zs7v7",
+      "name": "Create Audio Track - Stereo",
+      "description": "Instantly creates a new stereo audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8c3f0006oy10rzlyqv6x",
+      "name": "Create Audio Track - Quad",
+      "description": "Instantly creates a new quad audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckum77mkz0004ph106wrckbbu",
+      "name": "Create Audio Track - Mono",
+      "description": "Instantly creates a new mono audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8cjy0007oy10yhly461c",
+      "name": "Create Audio Track - LCRS",
+      "description": "Instantly creates a new LCRS (Left, Center, Right, Surround) audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8fm8000ioy10rqqiryvv",
+      "name": "Create Audio Track - 1st Order Ambisonics",
+      "description": "Instantly creates a new 1st Order Ambisonics audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8fwi000joy1001rhd5zr",
+      "name": "Create Audio Track - 2nd Order Ambisonics",
+      "description": "Instantly creates a new 2nd Order Ambisonics audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8g71000koy10yvrbo8nv",
+      "name": "Create Audio Track - 3rd Order Ambisonics",
+      "description": "Instantly creates a new 3rd Order Ambisonics audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8cz10008oy10sbct5lh3",
+      "name": "Create Audio Track - 5.0",
+      "description": "Instantly creates a new 5.0 surround audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8daj0009oy105fnqv2r3",
+      "name": "Create Audio Track - 5.1",
+      "description": "Instantly creates a new 5.1 surround audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8di7000aoy10sb2viwq0",
+      "name": "Create Audio Track - 6.0",
+      "description": "Instantly creates a new 6.0 surround audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8dte000boy10uc18etg9",
+      "name": "Create Audio Track - 6.1",
+      "description": "Instantly creates a new 6.1 surround audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8e4s000coy10ylap4mqi",
+      "name": "Create Audio Track - 7.0",
+      "description": "Instantly creates a new 7.0 surround audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8egg000doy10zwqqjkc5",
+      "name": "Create Audio Track - 7.0 SDDS",
+      "description": "Instantly creates a new 7.0 SDDS surround audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8f58000goy105ovurr0l",
+      "name": "Create Audio Track - 7.0.2",
+      "description": "Instantly creates a new 7.0.2 Dolby Atmos audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8er4000eoy10csyf5xec",
+      "name": "Create Audio Track - 7.1",
+      "description": "Instantly creates a new 7.1 surround audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8ewd000foy10n8bv8u1a",
+      "name": "Create Audio Track - 7.1 SDDS",
+      "description": "Instantly creates a new 7.1 SDDS surround audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk8fd2000hoy10ki7i0qc6",
+      "name": "Create Audio Track - 7.1.2",
+      "description": "Instantly creates a new 7.1.2 Dolby Atmos audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsk7hql0005oy10fwrzlne7",
+      "name": "Create Audio Track - LCR",
+      "description": "Instantly creates a new LCR (Left, Center, Right) audio track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumcqfb8000aph10rbbshp48",
+      "name": "Create Aux Input - Mono",
+      "description": "Instantly creates a new mono aux input track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumcne4n0009ph10fkb2845u",
+      "name": "Create Aux Input - Stereo",
+      "description": "Instantly creates a new stereo aux input track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv4lw000yoy10xg0w4fyl",
+      "name": "Create Aux Track - 1st Order Ambisonics",
+      "description": "Instantly creates a new 1st Order Ambisonics aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv4wj000zoy10c6u2otcs",
+      "name": "Create Aux Track - 2nd Order Ambisonics",
+      "description": "Instantly creates a new 2nd Order Ambisonics aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv5760010oy10sidgm9pn",
+      "name": "Create Aux Track - 3rd Order Ambisonics",
+      "description": "Instantly creates a new 3rd Order Ambisonics aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv1ww000ooy10tmrq1rwh",
+      "name": "Create Aux Track - 5.0",
+      "description": "Instantly creates a new 5.0 surround aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv284000poy10kg02hp74",
+      "name": "Create Aux Track - 5.1",
+      "description": "Instantly creates a new 5.1 surround aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv2kb000qoy10u4hl4x4j",
+      "name": "Create Aux Track - 6.0",
+      "description": "Instantly creates a new 6.0 surround aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv2zg000roy10bs8z0m2e",
+      "name": "Create Aux Track - 6.1",
+      "description": "Instantly creates a new 6.1 surround aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv33v000soy10zu54mh8i",
+      "name": "Create Aux Track - 7.0",
+      "description": "Instantly creates a new 7.0 surround aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv3dt000toy103uwt0tgi",
+      "name": "Create Aux Track - 7.0 SDDS",
+      "description": "Instantly creates a new 7.0 SDDS surround aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv44k000woy100pah04y0",
+      "name": "Create Aux Track - 7.0.2",
+      "description": "Instantly creates a new 7.0.2 Dolby Atmos aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv3oi000uoy10jlr62fzb",
+      "name": "Create Aux Track - 7.1",
+      "description": "Instantly creates a new 7.1 surround aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv3u8000voy101p1t24tk",
+      "name": "Create Aux Track - 7.1 SDDS",
+      "description": "Instantly creates a new 7.1 SDDS surround aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv4c9000xoy10mhcnzrwk",
+      "name": "Create Aux Track - 7.1.2",
+      "description": "Instantly creates a new 7.1.2 Dolby Atmos aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskunid000loy10yark4zx3",
+      "name": "Create Aux Track - LCR",
+      "description": "Instantly creates a new LCR (Left, Center, Right) aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv1gq000noy10y3e2hyha",
+      "name": "Create Aux Track - LCRS",
+      "description": "Instantly creates a new LCRS (Left, Center, Right, Surround) aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvskv10w000moy10tj93rt3g",
+      "name": "Create Aux Track - Quad",
+      "description": "Instantly creates a new quad aux track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumck86e0007ph10c5rx5c45",
+      "name": "Create Basic Folder",
+      "description": "Instantly creates a new basic folder track for organizing tracks in the session without audio routing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckun61ja10001zu10bnpjxdas",
+      "name": "Create Routing Folder - Mono",
+      "description": "Instantly creates a new mono routing folder track that groups tracks and sums their audio output through a single mono bus."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumcm66w0008ph10njaf6srd",
+      "name": "Create Routing Folder - Stereo",
+      "description": "Instantly creates a new stereo routing folder track that groups tracks and sums their audio output through a single stereo bus."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8sdc001eoy10kua379p0",
+      "name": "Create Instrument Track - 1st Order Ambisonics",
+      "description": "Instantly creates a new 1st Order Ambisonics instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8skj001foy10hchmjz9j",
+      "name": "Create Instrument Track - 2nd Order Ambisonics",
+      "description": "Instantly creates a new 2nd Order Ambisonics instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8swh001goy10hg9l4j57",
+      "name": "Create Instrument Track - 3rd Order Ambisonics",
+      "description": "Instantly creates a new 3rd Order Ambisonics instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8pxk0014oy10hp61dklf",
+      "name": "Create Instrument Track - 5.0",
+      "description": "Instantly creates a new 5.0 surround instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8q870015oy10wyih7x6t",
+      "name": "Create Instrument Track - 5.1",
+      "description": "Instantly creates a new 5.1 surround instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8qix0016oy109i2d9740",
+      "name": "Create Instrument Track - 6.0",
+      "description": "Instantly creates a new 6.0 surround instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8qth0017oy108tft6dyt",
+      "name": "Create Instrument Track - 6.1",
+      "description": "Instantly creates a new 6.1 surround instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8qy50018oy10mk7urjha",
+      "name": "Create Instrument Track - 7.0",
+      "description": "Instantly creates a new 7.0 surround instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8r7c0019oy10pcbvc0zp",
+      "name": "Create Instrument Track - 7.0 SDDS",
+      "description": "Instantly creates a new 7.0 SDDS surround instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8rwz001coy10rqc2039j",
+      "name": "Create Instrument Track - 7.0.2",
+      "description": "Instantly creates a new 7.0.2 Dolby Atmos instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8rfp001aoy10r7qpqzco",
+      "name": "Create Instrument Track - 7.1",
+      "description": "Instantly creates a new 7.1 surround instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8rph001boy1054dg9e40",
+      "name": "Create Instrument Track - 7.1 SDDS",
+      "description": "Instantly creates a new 7.1 SDDS surround instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8s40001doy10w96802lj",
+      "name": "Create Instrument Track - 7.1.2",
+      "description": "Instantly creates a new 7.1.2 Dolby Atmos instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8c850011oy105hxbnmcn",
+      "name": "Create Instrument Track - LCR",
+      "description": "Instantly creates a new LCR (Left, Center, Right) instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8plj0013oy10tb8db6vr",
+      "name": "Create Instrument Track - LCRS",
+      "description": "Instantly creates a new LCRS (Left, Center, Right, Surround) instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumcs7qc000dph102amfcwai",
+      "name": "Create Instrument Track - Mono",
+      "description": "Instantly creates a new mono instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsl8p8h0012oy1029zebmf8",
+      "name": "Create Instrument Track - Quad",
+      "description": "Instantly creates a new quad instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumcsg7f000eph10egr5e16k",
+      "name": "Create Instrument Track - Stereo",
+      "description": "Instantly creates a new stereo instrument track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsliryb001uoy109qgl7ij6",
+      "name": "Create Master Fader - 1st Order Ambisonics",
+      "description": "Instantly creates a new 1st Order Ambisonics master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvslis3j001voy10ohvcrdtp",
+      "name": "Create Master Fader - 2nd Order Ambisonics",
+      "description": "Instantly creates a new 2nd Order Ambisonics master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsliseu001woy107en1nwe6",
+      "name": "Create Master Fader - 3rd Order Ambisonics",
+      "description": "Instantly creates a new 3rd Order Ambisonics master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvslippv001koy10kfjdjzjz",
+      "name": "Create Master Fader - 5.0",
+      "description": "Instantly creates a new 5.0 surround master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsliq0q001loy10qqjyy3js",
+      "name": "Create Master Fader - 5.1",
+      "description": "Instantly creates a new 5.1 surround master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsliqby001moy10mgs40q5h",
+      "name": "Create Master Fader - 6.0",
+      "description": "Instantly creates a new 6.0 surround master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsliqgx001noy10dz9jbzbh",
+      "name": "Create Master Fader - 6.1",
+      "description": "Instantly creates a new 6.1 surround master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsliqrc001ooy103bedm6pe",
+      "name": "Create Master Fader - 7.0",
+      "description": "Instantly creates a new 7.0 surround master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsliqw8001poy10u75ce4ea",
+      "name": "Create Master Fader - 7.0 SDDS",
+      "description": "Instantly creates a new 7.0 SDDS surround master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvslirhk001soy1077kahbx1",
+      "name": "Create Master Fader - 7.0.2",
+      "description": "Instantly creates a new 7.0.2 Dolby Atmos master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvslir12001qoy101xxxa06m",
+      "name": "Create Master Fader - 7.1",
+      "description": "Instantly creates a new 7.1 surround master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvslird2001roy10vco6jib2",
+      "name": "Create Master Fader - 7.1 SDDS",
+      "description": "Instantly creates a new 7.1 SDDS surround master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvslirm8001toy103hhbg11c",
+      "name": "Create Master Fader - 7.1.2",
+      "description": "Instantly creates a new 7.1.2 Dolby Atmos master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvslij1d001hoy10n6mlh7bu",
+      "name": "Create Master Fader - LCR",
+      "description": "Instantly creates a new LCR (Left, Center, Right) master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvslip9y001joy10o9rh8xle",
+      "name": "Create Master Fader - LCRS",
+      "description": "Instantly creates a new LCRS (Left, Center, Right, Surround) master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumciwjk0006ph10h1uyw8vo",
+      "name": "Create Master Fader - Mono",
+      "description": "Instantly creates a new mono master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckvsliotc001ioy10njoaf8a0",
+      "name": "Create Master Fader - Quad",
+      "description": "Instantly creates a new quad master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckun4kkib0000zu106hiv1rv3",
+      "name": "Create Master Fader - Stereo",
+      "description": "Instantly creates a new stereo master fader track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumcs0wp000cph10vbqe93y0",
+      "name": "Create MIDI Track",
+      "description": "Instantly creates a new MIDI track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#ckumcrnhd000bph10k27chknw",
+      "name": "Create VCA Master",
+      "description": "Instantly creates a new VCA (Voltage Controlled Amplifier) master track for controlling grouped track levels without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckumdk025000hph10fohx90lw#cmg67lgtt0000qx5qpa0sdd0g",
+      "name": "Create Video Track",
+      "description": "Instantly creates a new video track without opening the New Tracks dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w25y2f0002ef10uaapck5l",
+      "name": "Delete Empty Audio Tracks in Selection",
+      "description": "Walks through all selected tracks and deletes any audio tracks that are empty (contain no audio regions). Non-audio tracks and audio tracks with content are left untouched."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009qzv10qrv1xzvk",
+      "name": "Duplicate Selected Tracks",
+      "description": "Duplicates all currently selected tracks including their settings, plugins, routing, and automation."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009uzv10iolij1wt",
+      "name": "Duplicate, Hide and Make Inactive Selected Tracks",
+      "description": "Duplicates the selected tracks, then hides the originals and makes them inactive, freeing up DSP resources while keeping a backup of the original tracks."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w240wp0001ef102rl1ndz3",
+      "name": "Hide and Make Inactive Empty Audio Tracks in Selection",
+      "description": "Walks through all selected tracks and hides and makes inactive any audio tracks that are empty (contain no audio regions). Non-audio tracks and audio tracks with content are left untouched."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009vzv100ys5auuh",
+      "name": "Hide and Make Inactive Selected Tracks",
+      "description": "Hides and makes inactive all currently selected tracks, removing them from the edit/mix window view and freeing up DSP resources."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1y3mc5f0001lq103jimne0b",
+      "name": "Move CUTS Track Before Selected Track",
+      "description": "Moves the track named 'CUTS' to right before the currently selected track. Requires a track called 'CUTS' in the session. May need to be run twice if it fails the first time."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckftk383t00005t10fis94s21",
+      "name": "New Track with Track Preset",
+      "description": "Creates a new track using a saved track preset, which can include pre-configured plugins, routing, I/O settings, and other track parameters."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckfs5niws0007v110s447k1ac",
+      "name": "Recall Track Preset on Selected Track",
+      "description": "Applies a saved track preset to the currently selected track, loading pre-configured plugins, routing, I/O settings, and other track parameters onto the existing track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009wzv108n39uknd",
+      "name": "Rename Selected Track",
+      "description": "Opens the track name field for the currently selected track, allowing you to type a new name."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w271ie0003ef10w6jf56vv",
+      "name": "Select All Empty Audio Tracks in Session",
+      "description": "Selects every audio track in the session that contains no audio regions, making it easy to then delete or hide them in bulk. Walks through all tracks one by one and when done, all empty audio tracks will be selected."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w3x03b0012ef10ovyk58qs",
+      "name": "Select First Record Enabled Track",
+      "description": "Selects the first visible track in the session that is record-enabled."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600cqzv1037uhwnid",
+      "name": "Select Track By Name",
+      "description": "Opens a searchable dialog to find and select a track by typing its name."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckftn5msy0009vz106ga6t588",
+      "name": "Select/Show Tracks in Folder",
+      "description": "Selects and shows all tracks contained within the currently selected folder track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w2n1dx000aef10jkohi8cs",
+      "name": "Show All Active Tracks",
+      "description": "Shows all active (non-inactive) tracks in the edit/mix window, unhiding any that were previously hidden. Runs 'Show All Tracks' then 'Hide Inactive Tracks' to effectively exclusively show all active tracks."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009mzv10jbgicwjp",
+      "name": "Toggle Track Active/Inactive",
+      "description": "Toggles the selected track(s) between active and inactive states. Inactive tracks free up DSP resources but retain all settings."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqch2ub000f4k10k33gzt26",
+      "name": "Bounce",
+      "description": "Opens the Pro Tools Bounce dialog to bounce/export audio to disk."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqco9tq000t4k10f2t5m81y",
+      "name": "Bypass Inserts: All",
+      "description": "Bypasses all insert plugins on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcskpg00124k10ussh2q27",
+      "name": "Bypass Inserts: Delay",
+      "description": "Bypasses all delay plugins on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcsk7u00104k10phgmzvys",
+      "name": "Bypass Inserts: Dynamics",
+      "description": "Bypasses all dynamics plugins (compressors, limiters, gates, etc.) on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcsjvz000z4k10s54n1cuo",
+      "name": "Bypass Inserts: EQ",
+      "description": "Bypasses all EQ plugins on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcsj2i000x4k10yzun7qve",
+      "name": "Bypass Inserts: Inserts A-E",
+      "description": "Bypasses all plugins in insert slots A through E (1-5) on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcsjl6000y4k10zwar0tqr",
+      "name": "Bypass Inserts: Inserts F-J",
+      "description": "Bypasses all plugins in insert slots F through J (6-10) on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcskxy00134k104oypn94r",
+      "name": "Bypass Inserts: Modulation",
+      "description": "Bypasses all modulation plugins (chorus, flanger, phaser, etc.) on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcskhw00114k10h25xf309",
+      "name": "Bypass Inserts: Reverb",
+      "description": "Bypasses all reverb plugins on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdiu47x001n9r100o7gypjb",
+      "name": "Change Track Width: 1st Order Ambisonics",
+      "description": "Changes the selected track's channel width to 1st Order Ambisonics format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdiumzl001q9r10rjfktcy7",
+      "name": "Change Track Width: 2nd Order Ambisonics",
+      "description": "Changes the selected track's channel width to 2nd Order Ambisonics format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdiundl001r9r10fpywk8at",
+      "name": "Change Track Width: 3rd Order Ambisonics",
+      "description": "Changes the selected track's channel width to 3rd Order Ambisonics format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktditvuw001j9r10hbrv1z37",
+      "name": "Change Track Width: 5.0",
+      "description": "Changes the selected track's channel width to 5.0 surround format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktditwg4001k9r10drej21cz",
+      "name": "Change Track Width: 5.1",
+      "description": "Changes the selected track's channel width to 5.1 surround format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdmwcaf001w9r10d2nn7w6h",
+      "name": "Change Track Width: 6.0",
+      "description": "Changes the selected track's channel width to 6.0 surround format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdmwn7b001x9r108qtshr5v",
+      "name": "Change Track Width: 6.1",
+      "description": "Changes the selected track's channel width to 6.1 surround format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktditwvc001l9r10jdo6pkq8",
+      "name": "Change Track Width: 7.0",
+      "description": "Changes the selected track's channel width to 7.0 surround format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdmyhzh001z9r108p8b8968",
+      "name": "Change Track Width: 7.0 SDDS",
+      "description": "Changes the selected track's channel width to 7.0 SDDS surround format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdiu4jf001o9r104crdy0ig",
+      "name": "Change Track Width: 7.0.2",
+      "description": "Changes the selected track's channel width to 7.0.2 Dolby Atmos format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdiuntn001s9r10xh96gua0",
+      "name": "Change Track Width: 7.1",
+      "description": "Changes the selected track's channel width to 7.1 surround format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdmxcxs001y9r10br7eja47",
+      "name": "Change Track Width: 7.1 SDDS",
+      "description": "Changes the selected track's channel width to 7.1 SDDS surround format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdiu3s1001m9r106bg5rcrp",
+      "name": "Change Track Width: 7.1.2",
+      "description": "Changes the selected track's channel width to 7.1.2 Dolby Atmos format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktditor1001h9r10feyeqeap",
+      "name": "Change Track Width: LCR",
+      "description": "Changes the selected track's channel width to LCR (Left, Center, Right) format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdmvwk1001v9r10or2fq310",
+      "name": "Change Track Width: LCRS",
+      "description": "Changes the selected track's channel width to LCRS (Left, Center, Right, Surround) format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdiqgpw00189r105mkb11cc",
+      "name": "Change Track Width: Mono",
+      "description": "Changes the selected track's channel width to mono."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdits2l001i9r10ubeel3qr",
+      "name": "Change Track Width: Quad",
+      "description": "Changes the selected track's channel width to quad format."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktdium7l001p9r101356bcq0",
+      "name": "Change Track Width: Show / Hide",
+      "description": "Shows or hides the track width selector on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktditlpl001g9r10g296c26a",
+      "name": "Change Track Width: Stereo",
+      "description": "Changes the selected track's channel width to stereo."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqch4yy000l4k10sxmldrjo",
+      "name": "Clear All Clip Indicators",
+      "description": "Clears all clip (red) indicators on all track meters in the mix/edit window."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqck48o000o4k105d5tc35f",
+      "name": "Clear Trim Automation",
+      "description": "Clears/resets the trim automation data on the selected track(s), removing the trim offset layer without affecting the underlying automation."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqck3zb000n4k10r3jn51e9",
+      "name": "Coalesce Trim Automation",
+      "description": "Sums the trim automation offset layer with the underlying automation into a single playlist and resets the trim fader to zero."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqck3jw000m4k1003r2sj2k",
+      "name": "Coalesce VCA Controller Automation",
+      "description": "Merges VCA master automation into the individual member tracks' automation, dissolving the VCA control relationship."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqch2ft000e4k10q133rt8y",
+      "name": "Commit",
+      "description": "Opens the Commit dialog to render/commit the selected track(s) to audio, freezing all plugins and processing into a new audio file."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcccn4000a4k10klk3itvj",
+      "name": "Convert Aux to Routing Folder",
+      "description": "Converts the selected aux track into a routing folder, maintaining its routing while adding folder organization capabilities."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqck52w000s4k10d23shkdf",
+      "name": "Create Click Track",
+      "description": "Creates a new click/metronome track in the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqccd2d000b4k10udbdmte2",
+      "name": "Delete",
+      "description": "Opens the delete track dialog to delete the selected track(s) from the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqck4ep000p4k10cx0vld1p",
+      "name": "Designate as Target Playlist",
+      "description": "Designates the selected playlist as the target playlist for the track, determining which playlist receives new recordings or edits."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqccaxo00064k10307touw3",
+      "name": "Duplicate",
+      "description": "Opens the duplicate track dialog to duplicate the selected track(s) with options for what to include."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqch38k000g4k10xczl77tj",
+      "name": "Extract MIDI to New Track",
+      "description": "Extracts MIDI data from the selected track and places it on a new MIDI or instrument track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqccdhn000c4k10wp9w8nf0",
+      "name": "Freeze",
+      "description": "Freezes the selected track, rendering all plugins to audio to free up DSP resources while keeping the ability to unfreeze later."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqccahr00054k102q57qg6i",
+      "name": "Group",
+      "description": "Opens the Group dialog to create or modify a mix/edit group for the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#ckxz0izmp0000o9102lxjtwnb",
+      "name": "Make Active",
+      "description": "Makes the selected inactive track(s) active, re-enabling DSP processing and audio routing."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqccbr300084k109ydjypxg",
+      "name": "Make Inactive",
+      "description": "Makes the selected track(s) inactive, freeing up DSP resources while retaining all settings."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqccc6d00094k107ll4q2ak",
+      "name": "Move to New Folder",
+      "description": "Opens a dialog to move the selected track(s) into a new folder track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcyiu900154k10jb0sj1fm",
+      "name": "Mute Sends: All",
+      "description": "Mutes all sends on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcq2v5000w4k109c4lwyzh",
+      "name": "Mute Sends: Sends A-E",
+      "description": "Mutes sends A through E (1-5) on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcyhxi00144k10nqondyxv",
+      "name": "Mute Sends: Sends F-J",
+      "description": "Mutes sends F through J (6-10) on the selected track(s)."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqcbwes00044k10otnusjsd",
+      "name": "New",
+      "description": "Opens the New Track dialog from the track menu."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqch3lh000h4k10d121xdkf",
+      "name": "Save Track Preset",
+      "description": "Saves the selected track's current settings (plugins, routing, I/O, etc.) as a reusable track preset."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqch4oy000k4k10p4rqond3",
+      "name": "Scroll to Track",
+      "description": "Scrolls the edit/mix window to bring the selected track into view."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqch4bz000j4k10g5vakolo",
+      "name": "Set Record Tracks to Input Only",
+      "description": "Sets all record-enabled tracks to input monitoring only, so you hear the live input signal instead of previously recorded audio."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqck4ns000q4k10rfwj7ipv",
+      "name": "Show Target Playlist",
+      "description": "Shows the designated target playlist on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqccbcp00074k10njv9qpta",
+      "name": "Split into Mono",
+      "description": "Splits a stereo or multichannel track into individual mono tracks, one per channel."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqck4tz000r4k10uvhfm4v5",
+      "name": "Toggle Recent Playlist",
+      "description": "Toggles between the current and most recently used playlist on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktqgh7kv00164k10b9xodbl0#cktqch3z3000i4k10ufh8irz1",
+      "name": "Write MIDI Real-Time Properties",
+      "description": "Writes the current MIDI real-time properties (quantize, transpose, etc.) permanently into the MIDI data on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009rzv107p5co29y",
+      "name": "Close Folder Track",
+      "description": "Closes the selected folder track, collapsing its child tracks from view."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600d8zv10e27zzhl2",
+      "name": "Hide All Tracks",
+      "description": "Hides all tracks from the edit/mix window view."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600d9zv10ytn87d8n",
+      "name": "Hide Selected Tracks",
+      "description": "Hides the currently selected tracks from the edit/mix window view."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009szv104soab09t",
+      "name": "Open Folder Track",
+      "description": "Opens the selected folder track, expanding it to show its child tracks."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600dbzv10lhdhz2ee",
+      "name": "Restore Ignored Collaboration Tracks",
+      "description": "Restores any collaboration tracks that were previously ignored/hidden back into the session view."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600dazv10ie0x24k1",
+      "name": "Restore Previously Shown Tracks",
+      "description": "Restores the previous track visibility state, unhiding tracks that were shown before the last hide operation."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600d6zv10qjvc097v",
+      "name": "Show All Tracks",
+      "description": "Shows all tracks in the edit/mix window, unhiding everything."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600d7zv10bjkqgf3o",
+      "name": "Show Only Selected Tracks",
+      "description": "Hides all tracks except the currently selected ones."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600d5zv10q7amjnm2",
+      "name": "Show Only Tracks with Active, Unmuted Clips in Current Selection",
+      "description": "Hides all tracks except those that have active, unmuted clips within the current timeline selection."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cm4j4097m0001gm100umjcvdv",
+      "name": "Show Only Tracks with Clips",
+      "description": "Hides all tracks except those that contain audio or MIDI clips."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600d4zv10eos8hfwq",
+      "name": "Show Only Tracks with Clips in Current Selection",
+      "description": "Hides all tracks except those that have clips within the current timeline selection."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq600crzv109g1u4o65",
+      "name": "Show Only Tracks With Name (Search)",
+      "description": "Opens a search dialog to filter and show only tracks matching the typed name."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009pzv10in1b6rj4",
+      "name": "Show Only VCA and Its Children",
+      "description": "Hides all tracks except the selected VCA master and its member/child tracks."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009tzv1067m1q5kw",
+      "name": "Toggle Folder Track Open/Close",
+      "description": "Toggles the selected folder track between open (expanded) and closed (collapsed) states."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq6009ozv101l1f358p",
+      "name": "Toggle VCA Children Visibility",
+      "description": "Toggles the visibility of child/member tracks belonging to the selected VCA master."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcms2j4000h9r103zqxnmg5",
+      "name": "Bounce Mix",
+      "description": "Opens the Bounce Mix dialog to export/bounce the session mix to an audio file."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmp0xe000a9r10n04ajfh0",
+      "name": "Close Session",
+      "description": "Closes the current Pro Tools session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#ckt2kvwp80002af10a552lsu0",
+      "name": "Create New",
+      "description": "Opens the Create New Session dialog."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmw8aj000q9r10yz9hz6ai",
+      "name": "Export - MIDI",
+      "description": "Exports MIDI data from the session as a MIDI file."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmvhqa000o9r10hvc6y34r",
+      "name": "Export - Selected Tracks as New AAF/OMF",
+      "description": "Exports the selected tracks as a new AAF or OMF file for transferring to other DAWs."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmvvse000p9r102jj0ei1u",
+      "name": "Export - Selected Tracks as New Session",
+      "description": "Exports the selected tracks as a new Pro Tools session file."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmx3az000s9r10bf4986t2",
+      "name": "Export - Session Info as Text",
+      "description": "Exports session information (track names, plugins, routing, etc.) as a text file."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmwq38000r9r10h4xmhqcs",
+      "name": "Export - Sibelius",
+      "description": "Exports MIDI/score data from the session for use in Sibelius notation software."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmxg1a000t9r10v9p5nzm8",
+      "name": "Get Info",
+      "description": "Opens the session info dialog showing details about the current Pro Tools session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmt66o000j9r10e9wwumww",
+      "name": "Import - Audio",
+      "description": "Opens the Import Audio dialog to bring audio files into the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmuoxe000m9r10f8xus8ml",
+      "name": "Import - Clip Groups",
+      "description": "Opens the Import Clip Groups dialog to bring clip groups into the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmtpn6000k9r10cei6lazt",
+      "name": "Import - MIDI",
+      "description": "Opens the Import MIDI dialog to bring MIDI files into the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmsijz000i9r100tqfofgw",
+      "name": "Import - Session Data",
+      "description": "Opens the Import Session Data dialog to import tracks, plugins, and settings from another Pro Tools session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmv46j000n9r10w03ny6ik",
+      "name": "Import - VENUE Channel Names as Track Names",
+      "description": "Imports channel names from an Avid VENUE live console and applies them as track names in the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmu1ek000l9r107c7eyej0",
+      "name": "Import - Video",
+      "description": "Opens the Import Video dialog to bring video files into the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmoqcy00099r10tvhd83ik",
+      "name": "Open Project",
+      "description": "Opens a Pro Tools project from the Avid cloud."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmoezr00089r10ksl8lhyb",
+      "name": "Open Session",
+      "description": "Opens the file browser to open an existing Pro Tools session from disk."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmy9ob000v9r1016zbyer4",
+      "name": "Print Score",
+      "description": "Opens the Print Score dialog for printing notation from the session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmqrb2000f9r10ks0q29wz",
+      "name": "Revert Session to Saved",
+      "description": "Reverts the current session to the last saved state, discarding all unsaved changes."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmqm0t000e9r106rqvjtob",
+      "name": "Save As Template",
+      "description": "Saves the current session as a reusable template."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmpd4s000b9r1099qf15fn",
+      "name": "Save Session",
+      "description": "Saves the current Pro Tools session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmpp80000c9r105td2tpnn",
+      "name": "Save Session As",
+      "description": "Opens the Save As dialog to save the current session with a new name or location."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmq4z0000d9r106j8q9yvf",
+      "name": "Save Session Copy In",
+      "description": "Opens a dialog to save a copy of the session to a new location, optionally with different audio file formats."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmxqqt000u9r10vcjnbk7v",
+      "name": "Score Setup",
+      "description": "Opens the Score Setup dialog for configuring notation/score display settings."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmyl2b000w9r10xp3jtvhx",
+      "name": "Sign In",
+      "description": "Opens the Avid sign-in dialog for cloud collaboration and account features."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:cktcnf0ra000x9r109i8wen1u#cktcmrepk000g9r10xx81tsrq",
+      "name": "Start Collaboration",
+      "description": "Starts an Avid cloud collaboration session, enabling real-time collaboration with other users."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w35fjn000lef10679co2hw",
+      "name": "Copy Newest File From Audio Files to Clipboard",
+      "description": "Copies the most recent audio file from the session's Audio Files folder to the system clipboard for pasting elsewhere."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1w41c8u0015ef10kd27lzs8",
+      "name": "Navigate to Folder of Current Session",
+      "description": "Opens a Finder window navigated to the folder containing the current Pro Tools session."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckoo6ffbb000syj109x8rtbts",
+      "name": "Navigate to Top-Most Finder Window in Save/Open Dialog",
+      "description": "When a Save or Open dialog is active, navigates it to the location shown in the top-most Finder window."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck3p6srh30000pt10jeenso16",
+      "name": "Reveal Selected Clip in Finder",
+      "description": "Opens a Finder window showing the actual audio file on disk for the currently selected clip in Pro Tools. Fetches the clip's filename from the Clip Rename dialog, then searches through the session's Audio Files folder (and subfolders) for matching files."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ck1we9pyd0002a610v5utbw5l",
+      "name": "Save Session as New Version",
+      "description": "Saves the current session as a new version with an increasing number suffix. First saves the current file, then uses Save As to append an incremented number (e.g. MY_EDIT_23 becomes MY_EDIT_24). If no number exists, appends '_2', then '_3', and so forth."
+    }
+  ]
+}
