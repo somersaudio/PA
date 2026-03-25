@@ -14,13 +14,57 @@ type Message = {
   content: string;
 };
 
+type StoredChat = {
+  messages: Message[];
+  updatedAt: number;
+};
+
+const STORAGE_KEY = "pa-chat-history";
+const MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000; // 1 week
+const MAX_MESSAGES_TO_SEND = 25;
+
+function loadHistory(): Message[] {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return [];
+    const stored: StoredChat = JSON.parse(raw);
+    if (Date.now() - stored.updatedAt > MAX_AGE_MS) {
+      localStorage.removeItem(STORAGE_KEY);
+      return [];
+    }
+    return stored.messages;
+  } catch {
+    return [];
+  }
+}
+
+function saveHistory(messages: Message[]) {
+  try {
+    const stored: StoredChat = { messages, updatedAt: Date.now() };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+  } catch {}
+}
+
 export function ChatPanel() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [open, setOpen] = useState(true); // open by default
+  const [open, setOpen] = useState(true);
+  const [hydrated, setHydrated] = useState(false);
   const router = useRouter();
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Load history from localStorage on mount
+  useEffect(() => {
+    const saved = loadHistory();
+    if (saved.length > 0) setMessages(saved);
+    setHydrated(true);
+  }, []);
+
+  // Save to localStorage whenever messages change (after hydration)
+  useEffect(() => {
+    if (hydrated) saveHistory(messages);
+  }, [messages, hydrated]);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -36,11 +80,14 @@ export function ChatPanel() {
     setLoading(true);
     setOpen(true);
 
+    // Only send the last MAX_MESSAGES_TO_SEND to the API
+    const messagesToSend = newMessages.slice(-MAX_MESSAGES_TO_SEND);
+
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: newMessages }),
+        body: JSON.stringify({ messages: messagesToSend }),
       });
       const data = await res.json();
       if (res.ok && data.reply) {
@@ -72,6 +119,11 @@ export function ChatPanel() {
   async function handleSend() {
     if (!input.trim() || loading) return;
     sendMessage(input.trim(), messages);
+  }
+
+  function handleClear() {
+    setMessages([]);
+    localStorage.removeItem(STORAGE_KEY);
   }
 
   if (!open) {
@@ -110,12 +162,15 @@ export function ChatPanel() {
       {/* Messages */}
       <div ref={scrollRef} className="flex-1 overflow-y-auto p-3 space-y-3">
         {messages.length > 0 && (
-          <div className="flex justify-end">
+          <div className="flex items-center justify-between">
+            <span className="text-[9px] text-muted-foreground">
+              {messages.length} messages ({Math.min(messages.length, MAX_MESSAGES_TO_SEND)} sent to AI)
+            </span>
             <Button
               variant="ghost"
               size="sm"
               className="h-5 px-1 text-[10px] text-muted-foreground"
-              onClick={() => setMessages([])}
+              onClick={handleClear}
             >
               Clear
             </Button>
