@@ -116,7 +116,9 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "messages required" }, { status: 400 });
     }
 
-    const systemPrompt = SYSTEM_PROMPT + getMemoryContext();
+    const today = new Date().toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+    const todayISO = new Date().toISOString().split("T")[0];
+    const systemPrompt = SYSTEM_PROMPT + `\n\nToday is ${today} (${todayISO}). Always use this date when creating sessions or referencing "today".` + getMemoryContext();
 
     // Run the agentic loop
     let currentMessages = messages.map((m) => ({

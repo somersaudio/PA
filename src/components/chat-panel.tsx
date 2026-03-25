@@ -138,7 +138,20 @@ export function ChatPanel() {
             }`}
           >
             {msg.role === "assistant" ? (
-              <div className="prose prose-xs prose-invert max-w-none [&_h1]:text-sm [&_h1]:font-bold [&_h1]:mb-1 [&_h2]:text-xs [&_h2]:font-bold [&_h2]:mb-1 [&_h3]:text-xs [&_h3]:font-bold [&_h3]:mb-1 [&_p]:text-xs [&_p]:mb-1.5 [&_ul]:text-xs [&_ul]:mb-1.5 [&_ol]:text-xs [&_ol]:mb-1.5 [&_li]:mb-0.5 [&_table]:text-[10px] [&_th]:px-2 [&_th]:py-1 [&_td]:px-2 [&_td]:py-1 [&_hr]:my-2 [&_blockquote]:text-xs [&_blockquote]:border-l-2 [&_blockquote]:border-blue-400/30 [&_blockquote]:pl-2 [&_blockquote]:italic [&_strong]:text-foreground [&_code]:text-[10px] [&_code]:bg-muted [&_code]:px-1 [&_code]:rounded">
+              <div
+                className="prose prose-xs prose-invert max-w-none [&_h1]:text-sm [&_h1]:font-bold [&_h1]:mb-1 [&_h2]:text-xs [&_h2]:font-bold [&_h2]:mb-1 [&_h3]:text-xs [&_h3]:font-bold [&_h3]:mb-1 [&_p]:text-xs [&_p]:mb-1.5 [&_ul]:text-xs [&_ul]:mb-1.5 [&_ol]:text-xs [&_ol]:mb-1.5 [&_li]:mb-0.5 [&_table]:text-[10px] [&_th]:px-2 [&_th]:py-1 [&_td]:px-2 [&_td]:py-1 [&_hr]:my-2 [&_blockquote]:text-xs [&_blockquote]:border-l-2 [&_blockquote]:border-blue-400/30 [&_blockquote]:pl-2 [&_blockquote]:italic [&_strong]:text-foreground [&_code]:text-[10px] [&_code]:bg-muted [&_code]:px-1 [&_code]:rounded"
+                onClick={(e) => {
+                  const target = e.target as HTMLElement;
+                  const anchor = target.closest("a");
+                  if (anchor) {
+                    const href = anchor.getAttribute("href");
+                    if (href?.startsWith("/")) {
+                      e.preventDefault();
+                      router.push(href);
+                    }
+                  }
+                }}
+              >
                 <ReactMarkdown rehypePlugins={[rehypeRaw]}>{msg.content}</ReactMarkdown>
               </div>
             ) : (
