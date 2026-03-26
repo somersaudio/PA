@@ -1894,6 +1894,31 @@
       "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt4xj9ij000a3n103s3u2a9g",
       "name": "Automation - Clear",
       "description": "Clears all automation data from the selected automation parameter on the selected track within the current selection or entire track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt4xt7s8000r3n10xt19jfwv",
+      "name": "Clear Special - All Automation",
+      "description": "Clears all automation data across every automation parameter on the selected tracks."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt4xsp7a000q3n10oy7nlzzv",
+      "name": "Clear Special - Clip Effects",
+      "description": "Removes all clip-based effects (such as clip gain, fades, and elastic audio) from selected clips."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt4xs05z000p3n10irfkzgju",
+      "name": "Clear Special - Clip Gain",
+      "description": "Resets clip gain to 0dB on all selected clips, removing any clip-level gain adjustments."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt4xto1w000s3n10xllaxoi4",
+      "name": "Clear Special - Pan Automation",
+      "description": "Clears all pan automation data from the selected tracks, resetting pan to its default position."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt4xv5dw000t3n10c5ymm3jp",
+      "name": "Clear Special - Plug-In Automation",
+      "description": "Clears all plug-in parameter automation data from the selected tracks."
     }
   ]
 }
