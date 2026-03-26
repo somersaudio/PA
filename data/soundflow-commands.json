@@ -1799,6 +1799,96 @@
       "id": "user:ckp49i4j60000a2100yfwywgf:ck1we9pyd0002a610v5utbw5l",
       "name": "Save Session as New Version",
       "description": "Saves the current session as a new version with an increasing number suffix. First saves the current file, then uses Save As to append an incremented number (e.g. MY_EDIT_23 becomes MY_EDIT_24). If no number exists, appends '_2', then '_3', and so forth."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckou1qcq4005yzv10lh8udc4c",
+      "name": "Consolidate Clips and Copy to Clipboard",
+      "description": "Consolidates all clips within the selection on each selected track into a single continuous clip and copies it to the clipboard for pasting elsewhere."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55bdcq00283n103mgb78ma",
+      "name": "Automation - Coalesce Clip Gain to Volume Automation",
+      "description": "Converts clip gain adjustments into volume automation data, merging them into the track's volume automation lane."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55f16d002i3n107r2uw3sr",
+      "name": "Automation - Coalesce Pan Guide Automation",
+      "description": "Merges pan guide automation into the main pan automation lane, consolidating any guide adjustments."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55avng00273n10nnr8jlxw",
+      "name": "Automation - Coalesce Volume Automation to Clip Gain",
+      "description": "Converts volume automation data into clip gain adjustments, baking automation into the clip level."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55ajf000263n10ny0l24a0",
+      "name": "Automation - Convert Clip Gain to Volume Automation",
+      "description": "Converts clip gain values to equivalent volume automation breakpoints without coalescing existing automation."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt559v4f00253n10v281q3hi",
+      "name": "Automation - Convert Volume Automation to Clip Gain",
+      "description": "Converts volume automation breakpoints into clip gain values, moving level changes from automation to clip-based gain."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#cktc0awx900019r10cv12vizf",
+      "name": "Automation - Copy to Send...",
+      "description": "Copies automation data from the current parameter to a send level or other send parameter."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55e8jv002g3n10qri3u4xt",
+      "name": "Duplicate Dolby Atmos Plug-in Automation to Pan",
+      "description": "Copies automation from a Dolby Atmos plugin's parameters to the track's pan automation lane."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55em8q002h3n10geg6cxdq",
+      "name": "Duplicate Pan Automation to Dolby Atmos Plug-in",
+      "description": "Copies pan automation data to the corresponding Dolby Atmos plugin parameters for spatial audio workflows."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55dv3f002f3n109oyhn0xj",
+      "name": "Automation - Glide Pan Only",
+      "description": "Applies a smooth glide (linear ramp) to pan automation only, creating a gradual transition between pan positions."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55dbtw002e3n103ne08dmw",
+      "name": "Automation - Glide to All Enabled",
+      "description": "Applies a smooth glide transition to all enabled automation parameters on selected tracks."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55d4zl002d3n10a22ubi4x",
+      "name": "Automation - Glide to Current",
+      "description": "Applies a smooth glide transition to the currently displayed automation parameter on the selected track."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#cktc0g46f00049r106gq3qgiu",
+      "name": "Automation - Thin",
+      "description": "Reduces the number of automation breakpoints on the current parameter while preserving the overall shape of the automation curve."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#cktc0gich00059r10mn01ew2q",
+      "name": "Automation - Thin All",
+      "description": "Reduces automation breakpoints across all automation parameters on selected tracks to optimize session performance."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55ctdh002c3n10l4a9tbmt",
+      "name": "Automation - Trim to All Enabled",
+      "description": "Sets all enabled automation parameters to Trim mode, allowing relative adjustments to existing automation."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55ci5e002b3n10ndvkoct0",
+      "name": "Automation - Trim to Current",
+      "description": "Sets the currently displayed automation parameter to Trim mode for relative adjustment."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55c348002a3n10bapmprw6",
+      "name": "Automation - Write to All Enabled",
+      "description": "Sets all enabled automation parameters to Write mode, which overwrites existing automation during playback."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55bpxz00293n10f3czq0w7",
+      "name": "Automation - Write to Current",
+      "description": "Sets the currently displayed automation parameter to Write mode for overwriting automation during playback."
     }
   ]
 }
