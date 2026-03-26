@@ -1889,6 +1889,11 @@
       "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt55bpxz00293n10f3czq0w7",
       "name": "Automation - Write to Current",
       "description": "Sets the currently displayed automation parameter to Write mode for overwriting automation during playback."
+    },
+    {
+      "id": "user:ckp49i4j60000a2100yfwywgf:ckt90h5f100008a10ilhfochy#ckt4xj9ij000a3n103s3u2a9g",
+      "name": "Automation - Clear",
+      "description": "Clears all automation data from the selected automation parameter on the selected track within the current selection or entire track."
     }
   ]
 }
